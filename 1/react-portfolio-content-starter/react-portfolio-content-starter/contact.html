@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara Portfolio | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">SA</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="references.html">References</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-panel">
+      <h1>Contact Me</h1>
+      <p><strong>Email:</strong> srouane@my.centennialcollege.ca</p>
+      <p><strong>Phone:</strong> 514-123-4567</p>
+      <p><strong>GitHub:</strong> https://github.com/velvosa</p>
+      <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/sararouane</p>
+    </section>
+
+    <section class="card">
+      <h2>Send a Message</h2>
+
+      <form id="contactForm">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="phone">Contact Number</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sara. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById("firstName").value;
+      const lastName = document.getElementById("lastName").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      console.log("Contact Form Submission:");
+      console.log("First Name:", firstName);
+      console.log("Last Name:", lastName);
+      console.log("Phone:", phone);
+      console.log("Email:", email);
+      console.log("Message:", message);
+
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
