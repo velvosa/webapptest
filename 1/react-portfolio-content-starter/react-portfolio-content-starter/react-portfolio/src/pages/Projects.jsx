@@ -1,12 +1,13 @@
 function Projects() {
     return (
-        <>
+        <section id="projects">
+
             <h1>Projects</h1>
 
             <section className="grid">
                 <article className="project-card">
                     <img
-                        src="assets/images/interior-design-project.jpg"
+                        src="/assets/images/interior-design-project.jpg"
                         alt="Interior design project image"
                     />
 
@@ -31,7 +32,7 @@ function Projects() {
 
                 <article className="project-card">
                     <img
-                        src="assets/images/tech-event-registration-form.jpg"
+                        src="/assets/images/tech-event-registration-form.jpg"
                         alt="Canadian Tech Event Registration Form screenshot"
                     />
 
@@ -60,7 +61,7 @@ function Projects() {
 
                 <article className="project-card">
                     <img
-                        src="assets/images/vision-room-project.jpg"
+                        src="/assets/images/vision-room-project.jpg"
                         alt="Vision Room project image"
                     />
 
@@ -86,11 +87,10 @@ function Projects() {
                         solutions.
                     </p>
                 </article>
+
             </section>
-        </>
-
-
-)
+        </section>
+    )
 }
 
 export default Projects

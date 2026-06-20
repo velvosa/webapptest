@@ -1,6 +1,6 @@
 function References() {
     return (
-        <>
+        <section id="references">
             <h1>References</h1>
 
             <section className="reference-card">
@@ -16,7 +16,7 @@ function References() {
                 <p><strong>Position:</strong> Project Coordinator</p>
                 <p>Sara is a reliable and detail-oriented professional who brings both creativity and organization to her work. She communicates effectively, approaches challenges with a problem-solving mindset, and consistently delivers quality results. Her ability to combine design thinking with technical knowledge makes her a valuable contributor to any project team.</p>
             </section>
-        </>
+        </section>
     )
 }
 

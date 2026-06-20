@@ -1,8 +1,8 @@
 function Services() {
     return (
-        <>
-            <h1>Services</h1>
+        <section id="services">
 
+            <h1>Services</h1>
 
             <section className="grid">
                 <article className="service-card">
@@ -35,8 +35,7 @@ function Services() {
                     </p>
                 </article>
             </section>
-        </>
-
+        </section>
     )
 }
 
